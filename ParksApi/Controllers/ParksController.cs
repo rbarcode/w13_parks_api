@@ -53,17 +53,9 @@ public class ParksController : ControllerBase
   [HttpPost]
   public async Task<ActionResult<Park>> Post(Park park)
   {
-    //need to add location and authority validation
-    // if (park.Location != "AK" || park.Location != "CA")
     _db.Parks.Add(park);
     await _db.SaveChangesAsync();
     return CreatedAtAction(nameof(GetPark), new { id = park.ParkId }, park);
-  }
-
-  private int MatchesAvailableLocations(string location)
-  {
-    Park park = new();
-    return Array.IndexOf(park.availableLocations, location);
   }
 
   // PUT: api/parks/{id}
