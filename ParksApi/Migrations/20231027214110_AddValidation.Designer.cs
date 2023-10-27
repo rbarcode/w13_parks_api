@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ParksApi.Models;
 
@@ -10,9 +11,10 @@ using ParksApi.Models;
 namespace ParksApi.Migrations
 {
     [DbContext(typeof(ParksApiContext))]
-    partial class ParksApiContextModelSnapshot : ModelSnapshot
+    [Migration("20231027214110_AddValidation")]
+    partial class AddValidation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -215,15 +217,15 @@ namespace ParksApi.Migrations
                         {
                             Id = "abc123",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a4e81f6c-2576-41c1-ae67-8edadbf1ea4f",
+                            ConcurrencyStamp = "12cf36ab-a9d8-45ae-9f0c-cff8b74f82cf",
                             Email = "james@test.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "JAMES@TEST.COM",
                             NormalizedUserName = "JOEY",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFiGGmGq1feweu0CF9R71/E3DtSIoFBn8Kak7hyxjnLKiR7xoIaAq+DaqeaS6f7yDA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGPnv0zDw5XvDeagqgU6t0KYz93P9sT0+7UjAjayg6hXIaMDyVMEvd54xj/277UuEA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "58eda642-a978-42f1-8926-e4f49d25b70e",
+                            SecurityStamp = "0dea3968-c829-439f-a818-4998ad0b5d60",
                             TwoFactorEnabled = false,
                             UserName = "James"
                         },
@@ -231,15 +233,15 @@ namespace ParksApi.Migrations
                         {
                             Id = "def456",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2b1ff46b-a531-4f1e-8c2c-c738f3d2823c",
+                            ConcurrencyStamp = "d16319a2-3353-45ee-8821-91390ab3f664",
                             Email = "mary@test.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "MARY@TEST.COM",
                             NormalizedUserName = "MARY",
-                            PasswordHash = "AQAAAAEAACcQAAAAECzawBnaJR0wQFyXB1nZgmCtA7bd4zQe7n1MmIc1gISi9lFxNg/pWARov37nw5OBBg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKpGvHz4pAcERalJzMoeEnp3xWQJy/XouN9rPuTcdGXj1Fm0YG/NQb7S+/czY1eozQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b52cc749-df24-4cef-9e08-c1aeae1d9f5d",
+                            SecurityStamp = "2a4fe29e-ff6c-441a-9f5e-7655239418cd",
                             TwoFactorEnabled = false,
                             UserName = "Mary"
                         });
