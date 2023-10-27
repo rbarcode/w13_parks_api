@@ -60,6 +60,12 @@ public class ParksController : ControllerBase
     return CreatedAtAction(nameof(GetPark), new { id = park.ParkId }, park);
   }
 
+  private int MatchesAvailableLocations(string location)
+  {
+    Park park = new();
+    return Array.IndexOf(park.availableLocations, location);
+  }
+
   // PUT: api/parks/{id}
   [HttpPut("{id}")]
   public async Task<IActionResult> Put(int id, Park park)
