@@ -1,6 +1,6 @@
 namespace ParksApi.Models
 {
-  public class ParksApi
+  public class Park
   {
     public int ParkId { get; set; }
 
