@@ -4,6 +4,6 @@ namespace ParksApi.Models
 {
   public class ApplicationUser : IdentityUser
   {
-    
+
   }
 }
