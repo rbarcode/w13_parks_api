@@ -60,7 +60,7 @@ else
 
 
 
-app.UseAuthorization();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
