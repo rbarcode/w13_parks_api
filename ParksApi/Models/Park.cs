@@ -13,7 +13,7 @@ namespace ParksApi.Models
     [Required]
     public string Authority { get; set; }
 
-    public readonly string[] availableLocations = { "AK", "CA" };
+    public readonly string[] availableLocations = { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MS", "MO", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY" };
 
     public readonly string[] availableAuthorities = { "National", "State" };
 
@@ -22,7 +22,7 @@ namespace ParksApi.Models
       if (Array.IndexOf(availableLocations, Location) == -1)
       {
         yield return new ValidationResult(
-          "You must use two-letter USPS state abbreviations. Currently only Alaska ('AK') and California ('CA') supported."
+          "You must use two-letter USPS state abbreviations (e.g. 'AL' for 'Alabama')."
         );
       }
 
