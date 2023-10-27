@@ -22,7 +22,7 @@ namespace ParksApi.Models
       if (Array.IndexOf(availableLocations, Location) == -1)
       {
         yield return new ValidationResult(
-          "You must use two-letter USPS state abbreviations (e.g. 'AL' for 'Alabama')."
+          "Invalid location. You must use two-letter USPS state abbreviations (e.g. 'AL' for 'Alabama')."
         );
       }
 
