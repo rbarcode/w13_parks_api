@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace ParksApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class AccountsController : ControllerBase
 {
   private readonly UserManager<ApplicationUser> _userManager;
