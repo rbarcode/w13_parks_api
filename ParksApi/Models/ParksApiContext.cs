@@ -6,7 +6,7 @@ namespace ParksApi.Models
 {
   public class ParksApiContext : IdentityDbContext<ApplicationUser>
   {
-    DbSet<Park> Parks { get; set; }
+    public DbSet<Park> Parks { get; set; }
 
     public ParksApiContext(DbContextOptions<ParksApiContext> options) : base(options) { }
 
