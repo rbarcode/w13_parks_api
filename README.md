@@ -1,5 +1,5 @@
 
-<p align="center"><font size="6">Parks Lookup API</font></p>  
+# Parks Lookup API 
 
 ------------------------------
 ## <u>Table of Contents</u>
