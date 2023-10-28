@@ -178,14 +178,14 @@ https://localhost:5000/api/accounts/signin
 }
 ```
 <div align="center">
-  <img src="img/signin_success_with_token.png" width="500" height="300"/>
+  <img src="img/signin_success_with_token.png" width="1000" height="600"/>
 </div>
 
 #### Using the JSON Web Token
 The token from the response must be added as an authorization header to all request further requests to the `https://localhost:5000/api/parks` endpoint. Copy the token from the body, and click on the Authorization tab in Postman. On the 'Type', make sure that is set to 'Bearer Token', and then paste in the token in the field on the right.
 
 <div align="center">
-  <img src="img/api_call_with_token.png" width="500" height="250"/>
+  <img src="img/api_call_with_token.png" width="1000" height="500"/>
 </div>
 
 Until the Token expires, you should now have access to all endpoints requiring user authorization.
@@ -229,14 +229,14 @@ https://localhost:5001/api/parks?location=AK&authority=State
 
 #### Sample JSON Response
 <div align="center">
-  <img src="img/get_call_with_params.png" width="450" height="400"/>
+  <img src="img/get_call_with_params.png" width="900" height="800"/>
 </div>  
     
 
 Finally, the user can make a GET call for a specific park by including the park's ID in the endpoint: `https://localhost:5001/api/parks/{id}`  
 
 <div align="center">
-  <img src="img/get_call_by_id.png" width="425" height="225"/>
+  <img src="img/get_call_by_id.png" width="850" height="450"/>
 </div>
 
 #### Making POST and PUT Requests  
@@ -245,7 +245,7 @@ The API contains model validation for the location and authority fields. Thus, i
 
 #### Sample JSON Response to a Bad Request  
 <div align="center">
-  <img src="img/post_400_bad_request.png" width="450" height="375"/>
+  <img src="img/post_400_bad_request.png" width="900" height="650"/>
 </div>  
 
 A POST request is made to api/parks endpoint while a PUT request must include the park's ID in the endpoint: api/parks/{id}.
@@ -258,7 +258,7 @@ Similar to PUT requests, a DELETE request must be made to an endpoint that inclu
 
 ### ⚖️ License
 
-```
+
 MIT License
 
 Copyright (c) 2023 JRichard Barbour.
@@ -268,7 +268,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
+
 
 ------------------------------
 
