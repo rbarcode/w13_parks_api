@@ -220,8 +220,7 @@ Alternatively, you can search by location and/or by type of park. To search by l
 | :---: | :---: | :---: | :---: | --- |
 | location | string | none | false | Return matches by state.
 | authority | string | none | false | Return matches by national or state parks. |
-| 
-
+ 
 #### Example Query
 ```
 https://localhost:5001/api/parks?location=AK&authority=State
@@ -241,9 +240,11 @@ Finally, the user can make a GET call for a specific park by including the park'
 
 #### Making POST and PUT Requests  
 
+POST and PUT Requests must include the "name", "location" and "authority" fields in the body of the request.  
+
 The API contains model validation for the location and authority fields. Thus, it is important that the user includes the correct type of information and correct formatting when making POST or PUT requests. The requirements are the same as querying with parameters (see above). The location must be a two-letter USPS state abbreviation and the authority must be either "National" or "State". An error will be returned otherwise.
 
-#### Sample JSON Response to a Bad Request  
+#### Sample POST Request and JSON Response to a Bad Request  
 <div align="center">
   <img src="img/post_400_bad_request.png" width="900" height="650"/>
 </div>  
@@ -252,7 +253,7 @@ A POST request is made to api/parks endpoint while a PUT request must include th
 
 #### Making DELETE Requests  
 
-Similar to PUT requests, a DELETE request must be made to an endpoint that includes the ID of the park that the user wishes to delete: api/parks/{id}.
+Similar to PUT requests, a DELETE request must be made to an endpoint that includes the ID of the park that the user wishes to delete: api/parks/{id}. Unlike the POST or PUT requests, a DELETE request does not require a body.
 
 ------------------------------
 
