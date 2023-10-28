@@ -1,7 +1,5 @@
-<br>
-<p align="center">
-  <u><big> <b>Parks Lookup Api</b> </big></u>
-</p>
+
+<p align="center"><font size="6">Parks Lookup API</font></p>  
 
 ------------------------------
 ## <u>Table of Contents</u>
